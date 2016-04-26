@@ -8,8 +8,6 @@ $(document).on 'ready page:load', ->
     options = $(cities).find("optgroup[label=" + country + "]").html()
     console.log(options)
     if options
-      $('select#person_city_id').html(options)
-      $('select#person_city_id').parent().show()
+      $('select#person_city_id').html(options).parent().show()
     else
-      $('select#person_city_id').empty()
-      $('select#person_city_id').parent().hide()
+      $('select#person_city_id').empty().parent().hide()
